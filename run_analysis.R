@@ -43,7 +43,7 @@ wantedColumnsNames <- c("subjectId","activityId",columnNames[wantedColumnsId])
 wantedData <- allData[,wantedColumnsNames]
 
 #Add column - activityNames
-wantedData = merge(wantedData,activities,by='activityId',all.x=TRUE);
+wantedData <- merge(wantedData,activities,by='activityId',all.x=TRUE);
 
 #Clean variable names. 
 names(wantedData)<-gsub("^t", "time", names(wantedData))
