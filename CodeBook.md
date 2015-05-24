@@ -29,10 +29,10 @@ The following files a red and column names are added.
 All information in the files from step 2 is merged into one big matrix called allData
 
 
-##Create a second dataset with only variables containing means and standard deviation
+##Step 4: Create a second dataset with only variables containing means and standard deviation
 A filter is created with all columns with mean or std in their name. A second dataset, wantedData, is created by subsetting allData with the filter. 
 
-##Make the variables names more understandable
+##Step 5: Make the variables names more understandable
 some text strings are replaced with longer names to make it easier to understand the variable names. 
 *t->time
 *f->frequency
@@ -41,10 +41,10 @@ some text strings are replaced with longer names to make it easier to understand
 *Mag->Magnitude
 *BodyBody->Body
 
-##Calculate a mean for each variable for each activity and each subject
+##Step 6: Calculate a mean for each variable for each activity and each subject
 A mean i calculcated for ecah variable for each activity and subject with dplyrs aggregate function. 
 
-##Write all the mean values to a file
+##Step 7: Write all the mean values to a file
 Before all the mean values are written to a file some columns are removed. These columns are just id vectors hence not containing any useful information
 
 The resulting file with calculated means contains the follwing information: 
